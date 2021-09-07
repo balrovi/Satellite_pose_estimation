@@ -1,0 +1,15 @@
+name: sat_challenge
+
+dependencies:
+  - pip
+  - python
+  - ipython
+  - pip:
+   - torch
+   - torchvision
+   - pytorch-lightning
+   - numpy
+   - matplotlib
+   - pillow
+
+
