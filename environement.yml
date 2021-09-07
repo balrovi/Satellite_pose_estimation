@@ -1,0 +1,14 @@
+name: dlenv
+
+dependencies:
+  - pip
+  - python
+  - ipython
+  - torch
+  - torchvision
+  - pytorch-lightning
+  - numpy
+  - matplotlib
+  - pillow
+
+
