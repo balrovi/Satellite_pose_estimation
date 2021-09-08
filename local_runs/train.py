@@ -112,7 +112,7 @@ if __name__ == '__main__':
     # parse the parameters passed to the this script
     args = parser.parse_args()
 
-    if local :
+    if args.local :
         data_path = "../../speed"
     else :
         data_path = args.data_path
