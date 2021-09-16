@@ -42,7 +42,7 @@ class Camera:
 def process_json_dataset(root_dir):
     with open(os.path.join(root_dir, 'train.json'), 'r') as f:
         train_images_labels = json.load(f)
-
+        
     with open(os.path.join(root_dir, 'test.json'), 'r') as f:
         test_image_list = json.load(f)
 
@@ -179,7 +179,7 @@ if has_pytorch:
                 raise ValueError('Invalid split, has to be either \'train\', \'test\' or \'real_test\'')
 
             with open(os.path.join(speed_root, split + '.json'), 'r') as f:
-                label_list = json.load(f)
+                 label_list = json.load(f)
 
             self.sample_ids = [label['filename'] for label in label_list]
             self.train = split == 'train'

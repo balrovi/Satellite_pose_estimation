@@ -113,7 +113,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.local :
-        data_path = "../../speed"
+        data_path = "/home_local/bene_sl/speed"
     else :
         data_path = args.data_path
 
@@ -132,6 +132,8 @@ if __name__ == '__main__':
     # ------------
     trainer = pl.Trainer.from_argparse_args(args, logger=tb_logger) #, plugins=DDPPlugin(find_unused_parameters=False))
     trainer.fit(model,dm)
+    print('Saving model...')
+    trainer.save_checkpoint(f"outputs/{trial_name}.ckpt")
     # try :
     #     trainer.fit(model, dm)
     # except :

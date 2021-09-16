@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'tensorflow'
+Traceback (most recent call last):
+  File "/net/rmc-lx0377/home_local/bene_sl/Satellite_pose_estimation/local_runs/train.py", line 5, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'

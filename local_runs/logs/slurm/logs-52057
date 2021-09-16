@@ -1,0 +1,54 @@
+=====Job Infos ====
+Node List:  rmc-gpu03
+jobID:  52057
+Partition:  RMC-C01-BATCH
+Submit directory: /net/rmc-lx0377/home_local/bene_sl/Satellite_pose_estimation/local_runs
+Submit host: rmc-slurm-head-c01
+In the directory: /net/rmc-lx0377/home_local/bene_sl/Satellite_pose_estimation/local_runs
+As the user: bene_sl
+Python version: 3.8.10 (default, Jun  4 2021, 15:09:15) 
+[GCC 7.5.0]
+pip version: pip 21.2.2 from /net/rmc-lx0377/home_local/bene_sl/mambaforge/envs/deeplearning/lib/python3.8/site-packages/pip (python 3.8)
+TF version: 2.4.1
+Wed Sep 15 20:29:04 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.84       Driver Version: 460.84       CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GeForce GTX TIT...  On   | 00000000:02:00.0 Off |                  N/A |
+| 22%   54C    P8    30W / 250W |      1MiB / 12212MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  GeForce GTX TIT...  On   | 00000000:04:00.0 Off |                  N/A |
+| 22%   54C    P8    29W / 250W |      1MiB / 12212MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   2  GeForce GTX TIT...  On   | 00000000:83:00.0 Off |                  N/A |
+| 22%   43C    P8    17W / 250W |      1MiB / 12212MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   3  GeForce GTX TIT...  On   | 00000000:84:00.0 Off |                  N/A |
+| 22%   41C    P8    16W / 250W |      1MiB / 12212MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+local 1
+logdir: ./tblogs
+num_workers 8
+batch_size 32
+gpus -1
+max_epochs 10
+Job Started at mer. sept. 15 20:29:04 CEST 2021
+----------------------------------------------------------------------------------------------------
+Job ended at mer. sept. 15 20:29:49 CEST 2021
+Took  45  s

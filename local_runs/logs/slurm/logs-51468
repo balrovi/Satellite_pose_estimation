@@ -1,0 +1,42 @@
+=====Job Infos ====
+Node List:  rmc-gpu05
+jobID:  51468
+Partition:  RMC-C01-BATCH
+Submit directory: /net/rmc-lx0377/home_local/bene_sl/Satellite_pose_estimation/local_runs
+Submit host: rmc-slurm-head-c01
+In the directory: /net/rmc-lx0377/home_local/bene_sl/Satellite_pose_estimation/local_runs
+As the user: bene_sl
+Python version: 3.8.10 (default, Jun  4 2021, 15:09:15) 
+[GCC 7.5.0]
+pip version: pip 21.2.2 from /net/rmc-lx0377/home_local/bene_sl/mambaforge/envs/deeplearning/lib/python3.8/site-packages/pip (python 3.8)
+TF version: 2.4.1
+Wed Sep 15 19:00:49 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.84       Driver Version: 460.84       CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GeForce GTX 1080    On   | 00000000:03:00.0 Off |                  N/A |
+| 39%   33C    P8    10W / 180W |      2MiB /  8119MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+local 1
+logdir: ./logs
+num_workers 8
+batch_size 32
+gpus 1
+max_epochs 10
+Job Started at mer. sept. 15 19:00:49 CEST 2021
+----------------------------------------------------------------------------------------------------
+Job ended at mer. sept. 15 19:01:35 CEST 2021
+Took  46  s
